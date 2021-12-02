@@ -10,7 +10,7 @@ Vadim_QA_Padawans_Channel, [30.11.21 05:57]
 6) Создать 5 файлов (3 txt, 2 json) - 1. touch 1.txt, 2.txt, 3txt, 1.json, 2.json
 7) Создать 3 папки - mkdir folder1, folder2, folder3
 8. Вывести список содержимого папки - ls -l
-9) + Открыть любой txt файл - cat file.txt
+9) + Открыть любой txt файл - open ./file.txt
 10) + написать туда что-нибудь, любой текст. - echo текст>file.txt
 11) + сохранить и выйти. - :wq
 12) Выйти из папки на уровень выше - cd ..
@@ -28,8 +28,28 @@ Vadim_QA_Padawans_Channel, [30.11.21 05:57]
 Задание *
 1) Отправить http запрос на сервер.
 http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
-2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+{"age":"32","family":{"children":[["Alex",24],["Kate",12]],"pets":{"cat":{"age":3,"name":"Sunny"},"dog":{"age":4,"name":"Luky"}},"u_salary_1_5_year":4000},"name":"Vadim","salary":1000}
 
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+mkdir folder
+
+#3.Зайти в папку -
+cd ./folder
+#4.Создать 3  папки - 
+ mkdir '1folder' '2folder' '3folder'
+#5.Зайти в любую папку -
+ cd ./2folder
+#6.Создать 5 файлов
+ touch 'file1.txt' 'file2.txt'
+ touch 'file1.json' 'file2.json' 'file3.json' 
+#7.Создать 3 папки -
+ mkdir 'name4' 'name5' 'name6'
+#8. Вывести список содержимого папки -
+ ls -l
+#13.Переместить любые 2 файла, которые вы создали, в любую другую папку - 
+ mv file1.txt ./name5
+mv file2.json ./name6
 =====================
 1) Посмотреть где я - pwd
 2) Создать папку - mkdir foldername
