@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "447225db-73b7-46e8-9608-a80db8a880ec",
+		"name": "robots",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://jsonapi-robot-wars.herokuapp.com/robotModels/",
+					"protocol": "http",
+					"host": [
+						"jsonapi-robot-wars",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"robotModels",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
